@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,51 @@
     
 </head>
 <body>
-    <!-- 构造器例子 -->
     <script src="./1-constructor/index.js"></script>
 
 
     <h1>内容都在控制台呢～</h1>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center; /*定义body的元素垂直居中*/
+            justify-content: center; /*定义body的里的元素水平居中*/
+            z-index: 100;
+            /* position: absolute; */
+
+        }
+        .content {
+            width: 300px;
+            height: 300px;
+            background: orange;     
+            z-index: 100;   
+        }
+        .height{
+            height:800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="height">111</div>
+    <div class="div">
+        <div class="content"></div>
+    </div>
+    
 </body>
 </html>
